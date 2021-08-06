@@ -1,0 +1,2 @@
+github "mikaoj/BSImagePicker" ~> 3.1
+github "optonaut/ActiveLabel.swift"

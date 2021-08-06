@@ -1,0 +1,11 @@
+{
+  "commitish" : "3.3.1",
+  "iOS" : [
+    {
+      "hash" : "dd86cd40e62150afc1adce24c08da9d6453dc0248066039a5afa1817bb6abe21",
+      "name" : "BSImagePicker",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+    }
+  ]
+}

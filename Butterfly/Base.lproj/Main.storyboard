@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ogM-HM-Sqh">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="NzU-VW-kZU">
+            <objects>
+                <navigationController id="ogM-HM-Sqh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cdJ-9A-4SL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TFW-b0-ugZ" kind="relationship" relationship="rootViewController" id="5kb-L9-FPq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0F4-sM-z0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903" y="92"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kgB-jY-1vX">
+            <objects>
+                <viewController id="TFW-b0-ugZ" customClass="ViewController" customModule="Butterfly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Imu-S6-3tx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18D-sJ-dcO">
+                                <rect key="frame" x="137.5" y="582" width="100" height="45"/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.81960784310000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="aoR-eO-8sO"/>
+                                    <constraint firstAttribute="height" constant="45" id="mIN-1X-Kcg"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="إختار صور"/>
+                                <connections>
+                                    <action selector="browseButtonTapped:" destination="TFW-b0-ugZ" eventType="touchUpInside" id="akV-cz-HGX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فراشة 🦋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etu-14-Kb0">
+                                <rect key="frame" x="112" y="303.5" width="151.5" height="60"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="57"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" red="0.92549019607843142" green="0.25098039215686274" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="3" height="3"/>
+                            </label>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jy-a3-Lsl">
+                                <rect key="frame" x="112" y="389" width="151.5" height="30"/>
+                                <color key="tintColor" red="0.92549019610000005" green="0.25098039220000001" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="@wh0ba"/>
+                                <connections>
+                                    <action selector="handleButtonTapped:" destination="TFW-b0-ugZ" eventType="touchUpInside" id="G34-co-TwA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.035294117647058823" green="0.031372549019607843" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Etu-14-Kb0" firstAttribute="centerX" secondItem="Imu-S6-3tx" secondAttribute="centerX" id="19n-7Q-wsP"/>
+                            <constraint firstItem="UaZ-Tt-cgR" firstAttribute="bottom" secondItem="18D-sJ-dcO" secondAttribute="bottom" constant="40" id="65D-qL-1yR"/>
+                            <constraint firstItem="4Jy-a3-Lsl" firstAttribute="leading" secondItem="Etu-14-Kb0" secondAttribute="leading" id="8Iw-PK-xVB"/>
+                            <constraint firstItem="4Jy-a3-Lsl" firstAttribute="top" secondItem="Etu-14-Kb0" secondAttribute="bottom" constant="25.5" id="GuC-td-juk"/>
+                            <constraint firstItem="Etu-14-Kb0" firstAttribute="centerY" secondItem="Imu-S6-3tx" secondAttribute="centerY" id="IVw-Dg-dq7"/>
+                            <constraint firstItem="4Jy-a3-Lsl" firstAttribute="trailing" secondItem="Etu-14-Kb0" secondAttribute="trailing" id="dfj-OB-UmC"/>
+                            <constraint firstItem="18D-sJ-dcO" firstAttribute="centerX" secondItem="Imu-S6-3tx" secondAttribute="centerX" id="dkc-g0-sgZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UaZ-Tt-cgR"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="PlA-Fq-xoB"/>
+                    <connections>
+                        <outlet property="browseButton" destination="18D-sJ-dcO" id="kF3-YS-Qyn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9C-kT-PuJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="72.413793103448285"/>
+        </scene>
+    </scenes>
+</document>
